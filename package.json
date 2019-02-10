@@ -1,0 +1,23 @@
+{
+  "name": "bookie-server",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "cd client && npm run watch",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "cd client && npm run test"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-formidable": "^1.0.0",
+    "file-system": "^2.2.2",
+    "forever": "^0.15.3",
+    "fs": "0.0.1-security",
+    "mongodb": "^2.2.33",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
