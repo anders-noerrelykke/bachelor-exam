@@ -1,14 +1,14 @@
-import React from 'react';
-import Nav from './Nav';
-import Calendar from './BigCalendar';
-import moment from 'moment';
-import { lang } from './lang';
+import React from "react";
+import Nav from "./Nav";
+import Calendar from "./BigCalendar";
+import moment from "moment";
+import { lang } from "./lang";
 
 class App extends React.Component {
   state = {
     currentUser: {
-      firstname: 'Anders',
-      lastname: 'Nørrelykke'
+      firstname: "Anders",
+      lastname: "Nørrelykke"
     },
     events: [
       {
@@ -22,19 +22,19 @@ class App extends React.Component {
         title: "Bjarnemissen"
       }
     ],
-  
-    selectedLang: 'dk'
-  }
-  
+
+    selectedLang: "dk"
+  };
+
   formats = {
-    dayFormat: 'MM-dd-yyyy'
-  }
+    dayFormat: "MM-dd-yyyy"
+  };
 
   setLang = value => {
-    var selectedLang = {...this.state.selectedLang};
+    var selectedLang = { ...this.state.selectedLang };
     selectedLang = value;
     this.setState({ selectedLang });
-  }
+  };
 
   render() {
     return (
@@ -54,7 +54,7 @@ class App extends React.Component {
           formats={this.formats}
         />
       </React.Fragment>
-    )
+    );
   }
 }
 

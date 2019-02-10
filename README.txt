@@ -13,3 +13,7 @@ Start entire app (server and client):
 
 Run tests:
   npm run test
+
+
+Github Repo:
+  https://github.com/anders-noerrelykke/bachelor-exam.git
